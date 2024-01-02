@@ -52,6 +52,7 @@ namespace WebApplication2
             }
             catch (SqlException ss)
             {
+                string msg=ss.Message;
                 Label6.Text = (" wrong ");
 
             }
@@ -88,6 +89,7 @@ namespace WebApplication2
             catch (SqlException ss)
              
             {
+              string msg=ss.Message;
                 Label6.Text = (" wrong ");
 
             }
@@ -118,6 +120,7 @@ namespace WebApplication2
             }
             catch (SqlException ss)
             {
+              string msg=ss.Message;
                 Label6.Text = (" wrong ");
             }
             mycnn.Close();
@@ -141,7 +144,7 @@ namespace WebApplication2
             }
             catch (SqlException ss)
             {
-
+                string msg=ss.Message;
                 Label6.Text = (" wrong ");
             }
             mycnn.Close();
@@ -171,7 +174,7 @@ namespace WebApplication2
             }
             catch (SqlException ss)
             {
-
+                string msg=ss.Message;
                 Label6.Text = (" wrong ");
             }
             mycnn.Close();
